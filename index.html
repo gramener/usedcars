@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <title>Carvana: Used car performance</title>
+</head><body>
+
+{% set data = pd.read_csv('usedcars.csv.bz2', compression='bz2') %}
+
+<pre>{{ data }}</pre>
+
+<footer>
+  Source: <a href="http://www.kaggle.com/c/DontGetKicked">Don't Get Kicked</a>
+</footer>
+
+</body></html>
